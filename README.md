@@ -38,10 +38,13 @@ Below are the steps taken to complete this project.
 17. Change to our sonarqube user and install sonarqube for scanning our code
 18. we can now access sonarqube on the web browser and login with admin/admin…thereafter you can change your username and password…access is via server publicIP on port 9000.
 19. now lets integrate our SCM (github), our container registry (dockerhub) and our code analysis tool (sonarqube) with jenkins…restart jenkins after this.
-20. we can now build our jenkins pipeline using the pipeline option
-21. we will also update our jenkinsfile to reflect the sonarqube ip address before we run the job.
-22. now lets run the job… our expected outcome is the final artifact is containerized as a docker image and pushed to dockerhub with the build number as the tag.
-23. we should also check our SCM (github) repo to confirm that the manifest file has been updated to reflect the new image tag.
+## we can now build our jenkins pipeline using the pipeline option
+![Screenshot 2024-02-18 052419](https://github.com/dandiggle23/java-maven-sonar-argocd-helm-k8s/assets/64781879/8d434206-4619-45ef-8370-0612c08cdc87)
+
+20. we will also update our jenkinsfile to reflect th![Uploading Screenshot 2024-02-18 053826.png…]()
+e sonarqube ip address before we run the job.
+21. now lets run the job… our expected outcome is the final artifact is containerized as a docker image and pushed to dockerhub with the build number as the tag.
+22. we should also check our SCM (github) repo to confirm that the manifest file has been updated to reflect the new image tag.
 
 
 
