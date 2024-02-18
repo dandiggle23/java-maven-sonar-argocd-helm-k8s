@@ -16,7 +16,7 @@ pipeline {
       steps {
         
         // build the project and create a JAR file
-        sh 'cd Spring-boot-app && mvn clean package'
+        sh 'cd Springboot-app && mvn clean package'
       }
     }
     stage('Static Code Analysis'){
