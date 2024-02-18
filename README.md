@@ -48,37 +48,18 @@ Below are the steps taken to complete this project.
 
 
 ## Check the sonar server to see if the sonar configuration has passed
-
-
-![image]
-
-
+<img width="957" alt="Screenshot 2024-02-18 043920" src="https://github.com/dandiggle23/java-maven-sonar-argocd-helm-k8s/assets/64781879/441a1ee5-8372-4fc1-91ea-40b0343292bd">
 
 Yes it has.
-
-
-
-
 
 
 ## Set up ArgoCD on Kubernetes cluster to deploy our spring boot app
 Setup Minikube for local setups and install Argo CD on your Kubernetes cluster using a Kubernetes operator. i.e this makes it fast and easy
 
-
-
-![image]
-
-
-
-
 ## Create Application
 
 Click on create application in the ArgoCD home page and enter **Application name**, **Project name**, enter 'Automatic' for **SYNC POLICY**, scroll down and provide the **Repository URL, Path, Cluster URL** and enter default for **NAMESPACE**, then click **Create**
-
-
-![image]
-
-
+![Screenshot 2024-02-18 052353](https://github.com/dandiggle23/java-maven-sonar-argocd-helm-k8s/assets/64781879/9e5550eb-a389-4a2f-979c-cb4ba7eb9547)
 
 
 So there you have it, our application is deployed.
@@ -90,8 +71,9 @@ kubectl get deploy
 kubectl get pod
 ```
 
-![image]
+![Screenshot 2024-02-18 052419](https://github.com/dandiggle23/java-maven-sonar-argocd-helm-k8s/assets/64781879/8d434206-4619-45ef-8370-0612c08cdc87)
 
+![Screenshot 2024-02-18 054236](https://github.com/dandiggle23/java-maven-sonar-argocd-helm-k8s/assets/64781879/cee45074-0eba-4127-9def-0992e5190de3)
 
 They are all running
 
